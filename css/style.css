@@ -1,0 +1,83 @@
+body{
+    background: #ADA996;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: auto;
+    width: 100%;
+}
+.cont-producto{
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    background-image: url('/img/calendula.jpeg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;   
+}
+
+h1{
+    text-align: center;
+}
+
+header{
+    width: 90%;
+}
+
+main{
+    position: relative;
+    width: 90%;
+    height: 500px;
+    border: solid;
+    margin: auto;
+}
+section{
+    width: 45%;
+    height: auto;
+    position: relative;
+}
+aside{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+}
+footer{
+    width: 90%;
+    margin: 1% auto;
+    border: solid;
+}
+.container{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.campus{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    display: inline-block;
+    position:relative;
+    margin: 0;
+}
+.redes{
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    margin: auto;
+}
+.info{
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    position:absolute;
+    text-align: center;
+    right: 0;
+    margin: 0;
+}
