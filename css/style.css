@@ -12,23 +12,58 @@ body{
     background-image: url('/img/calendula.jpeg');
     background-size:cover;
     background-position:center;
-    background-repeat:no-repeat;   
+    background-repeat:no-repeat; 
+    border: groove;  
+    border-color: green;
 }
 
 h1{
     text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    letter-spacing: 20px;
+    background: linear-gradient(darkgreen, chartreuse);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    animation: text 5s linear infinite;
+}
+h2{
+    color: darkgreen;
+    font-family: 'Courgette', cursive;
+    font-size: 30px;
 }
 
 header{
-    width: 90%;
+    width: 100%;
+    margin: auto;
 }
 
+.cont{
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: white;
+}
+img{
+    position: relative;
+    margin: auto 10%;
+}
+.navegation{
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    margin: auto;
+    padding-bottom: 1%;
+}
 main{
     position: relative;
     width: 90%;
     height: 500px;
-    border: solid;
-    margin: auto;
+    margin: 5% auto;
 }
 section{
     width: 45%;
@@ -42,16 +77,16 @@ aside{
     width: 45%;
 }
 footer{
-    width: 90%;
+    width: 100%;
     margin: 1% auto;
-    border: solid;
+    background-color: rgb(191, 228, 155);
+    color: green;
 }
 .container{
     width: 90%;
     margin: auto;
     position: relative;
 }
-
 .campus{
     width: 300px;
     height: 100px;
@@ -80,4 +115,13 @@ footer{
     text-align: center;
     right: 0;
     margin: 0;
+}  
+
+@keyframes text{
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
 }
