@@ -6,7 +6,10 @@ body{
     width: 100%;
     height: 100vh;
 }
-
+i{
+    font-size: 30px;
+    color: green;
+}
 h1{
     text-align: center;
     font-family: 'Lobster', cursive;
@@ -25,12 +28,15 @@ h2{
     font-size: 30px;
     margin: 0;
 }
-h3{
+h3,h4{
     font-family: 'Courgette', cursive;
+    font-size: 20px;
+    margin: 10px 0;
 }
 p{
     text-align: justify;
     font-family: 'Courgette', cursive;
+    font-size: 25px;
 }
 button{
     width: 60px;
@@ -98,7 +104,7 @@ li a.active, li a:hover{
 main{
     position: relative;
     width: 90%;
-    height: calc(100vh - 210px);
+    height: calc(100vh - 250px);
     margin:auto;
 }
 section{
@@ -161,7 +167,6 @@ footer{
 }
 .campus{
     width: 300px;
-    height: 100px;
     text-align: center;
     display: inline-block;
     position:relative;
@@ -169,7 +174,6 @@ footer{
 }
 .redes{
     width: 300px;
-    height: 100px;
     display: inline-block;
     position: absolute;
     text-align: center;
@@ -181,7 +185,6 @@ footer{
 }
 .info{
     width: 300px;
-    height: 100px;
     display: inline-block;
     position:absolute;
     text-align: center;
@@ -205,6 +208,10 @@ footer{
     nav ul{
         margin: 0 2rem;
     }
+    p{
+        font-size: 20px;
+    }
+   
 }
 
 @media (max-width: 930px){
@@ -218,6 +225,7 @@ footer{
         background: white;
         top: 135px;
         left: -150%;
+        z-index: 10;
         text-align: center;
         transition: all .5s;
     }
@@ -235,5 +243,27 @@ footer{
     }
     #check:checked ~ ul{
         left: 0;
+    }
+    main{
+        height: 1000px;
+    }
+    section{
+        position: relative;
+        height: 50%;
+        width: 100%;
+    }
+    aside{
+        position: relative;
+        height: 50%;
+        bottom: 0;
+        width: 100%;
+    }
+    footer{
+        height: 250px;
+    }
+    .campus, .info, .redes{
+        position: relative;
+        width: 100%;
+        padding: 10px;
     }
 }
