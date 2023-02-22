@@ -12,40 +12,53 @@
     <title>NATURENA</title>
 </head>
 <body>
-    <div class="cont">
     <header>
         <h1>PRODUCTOS NATURENA</h1>
+        <nav>
+            <input type="checkbox" id="check"/>
+            <label for="check" class="checkbtn">
+                <i class='bx bx-menu'></i>
+            </label>
+            <a class="enlace" href="#">
+                <img src="img/logo color.png" alt="" class="logo">
+            </a>
+            <ul>
+                <li><a class="active" href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">ECO RETOS</a></li>
+                <li><a href="#">NATUTIPS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>     
     </header>
-
-        <a class="navbar-brand" href="#">
-            <img src="img/logo color.png" width="200px" height="50px">
-        </a>
-        <nav class="navegation">
-            <a href="#">HOME</a>
-            <a href="#">ABOUT</a>
-            <a href="#">ECO RETOS</a>
-            <a href="#">NATUTIPS</a>
-            <a href="#">CONTACT</a>
-        </nav>
-    </div>
     <main>
         <section>
             <div class="cont-producto"></div>
         </section>
         <aside>
-            <div>
+            <div class="descripcion">
                 <h2>Descripción Producto</h2>
+                <p>Jabones 100% naturales creados para satisfacer tus necesidades y mantener una piel 
+                    joven, luminosa y llena de vida.
+                </p>
+                <p>Desarrollado pensando especialmente para pieles sensibles, delicadas o dañadas por 
+                    el sol. Gracias a las propiedades calmantes de la caléndula este jabón actúa como 
+                    humectante y antiinflamatorio, además, por su propiedades cicatrizantes y antisépticas, 
+                    trata heridas, quemaduras e infecciones cutáneas. La manzanilla es muy suave y posee 
+                    agentes reparadores y fortalecedores de la epidermis. La mezcla de estos dos 
+                    ingredientes naturales se traduce en una piel hidratada, más tersa, de aspecto joven, 
+                    libre de manchas y cicatrices.
+                </p>
             </div>
-            <div>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur sit distinctio recusandae ea perferendis nesciunt nostrum reprehenderit, enim aliquam, quis veniam voluptates nemo iusto animi eos nihil tempora veritatis eius!</p>
-            </div>
-            <div>
-                <button>opcion 1</button>
-                <button>opcion 2</button>
-                <button>opcion 3</button>
-                <button>opcion 4</button>
-                <button>opcion 5</button>
-                <button>click</button>
+            <div class="botones">
+                <div class="btn-opciones">
+                    <button><i class='bx bxs-coffee-bean'></i></button>
+                    <button><i class='bx bxl-mongodb'></i></button>
+                    <button><i class='bx bxs-spa'></i></button>
+                </div>
+                <div class="btn-comprar">
+                    <button><i class='bx bxs-cart-add'></i></button>
+                </div>
             </div>
         </aside>
 
@@ -54,7 +67,7 @@
     <footer>
         <div class="container">
             <div class="campus">
-                <p>Campus 2023</p>
+                <p><i class='bx bxs-copyright'></i>Campus 2023, CAMPUS SPUTNIK, Todos los derechos reservados</p>
             </div>
             <div class="redes">
                 <h3>Redes sociales</h3>

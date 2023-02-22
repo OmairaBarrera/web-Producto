@@ -4,23 +4,13 @@ body{
     background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     margin: auto;
     width: 100%;
-}
-.cont-producto{
-    width: 80%;
-    height: 500px;
-    margin: auto;
-    background-image: url('/img/calendula.jpeg');
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat; 
-    border: groove;  
-    border-color: green;
+    height: 100vh;
 }
 
 h1{
     text-align: center;
     font-family: 'Lobster', cursive;
-    font-size: 50px;
+    font-size: 30px;
     letter-spacing: 20px;
     background: linear-gradient(darkgreen, chartreuse);
     color: transparent;
@@ -33,52 +23,134 @@ h2{
     color: darkgreen;
     font-family: 'Courgette', cursive;
     font-size: 30px;
+    margin: 0;
 }
-
+h3{
+    font-family: 'Courgette', cursive;
+}
+p{
+    text-align: justify;
+    font-family: 'Courgette', cursive;
+}
+button{
+    width: 60px;
+    height: 60px;
+    border-radius:30px;
+    border-color: darkgreen;
+    background-color: rgb(191, 228, 155);
+}
 header{
-    width: 100%;
-    margin: auto;
-}
-
-.cont{
     position: relative;
     width: 100%;
+    height: 110px;
     margin: auto;
+    background-color: whitesmoke;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+nav{
     background-color: white;
+    height: 50px;
 }
-img{
-    position: relative;
-    margin: auto 10%;
-}
-.navegation{
+.enlace{
     position: absolute;
-    right: 5%;
-    bottom: 0;
+    padding: 10px 5rem;
+}
+.logo{
+    height: 30px;
+}
+nav ul{
+    float: right;
     margin: auto;
-    padding-bottom: 1%;
+    margin: 0 5rem;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 50px;
+    margin: 0;
+}
+nav a{
+    margin-left: 30px;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    text-decoration: none;
+    color:darkgreen;
+    padding: 7px 13px;
+    border-radius: 20px;
+}
+li a.active, li a:hover{
+    background-color: rgb(191, 228, 155);
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: darkgreen;
+    float: right;
+    line-height: 50px;
+    margin-right: 5rem;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
 }
 main{
     position: relative;
     width: 90%;
-    height: 500px;
-    margin: 5% auto;
+    height: calc(100vh - 210px);
+    margin:auto;
 }
 section{
-    width: 45%;
-    height: auto;
     position: relative;
+    width: 45%;
+    height: 100%;
+}
+.cont-producto{
+    position: absolute;
+    width: 90%;
+    height: 50vh;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-image: url('/img/calendula.jpeg');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat; 
+    border: groove;  
+    border-color: green;
 }
 aside{
     position: absolute;
     top: 0;
     right: 0;
     width: 45%;
+    height: 100%;
+}
+.descripcion{
+    margin: 1% auto;
+}
+.botones{
+    position: relative;
+    margin: auto;
+}
+.btn-opciones{
+    position: relative;
+    margin: auto;
+}
+.btn-comprar{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
 }
 footer{
     width: 100%;
-    margin: 1% auto;
+    height: 100px;
+    margin:auto;
     background-color: rgb(191, 228, 155);
     color: green;
 }
@@ -123,5 +195,45 @@ footer{
     }
     100% {
         filter: hue-rotate(360deg);
+    }
+}
+
+@media (max-width: 1042px){
+    .enlace{
+        padding: 10px 2rem;
+    }
+    nav ul{
+        margin: 0 2rem;
+    }
+}
+
+@media (max-width: 930px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: white;
+        top: 135px;
+        left: -150%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: rgb(191, 228, 155);
+    }
+    #check:checked ~ ul{
+        left: 0;
     }
 }
